@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                 banner: '/*\n<%= pkg.name %> <%= pkg.version %> - <%= pkg.description %> \n(C) 2013 - <%= pkg.author %> \nLicense: <%= pkg.license %> \nSource: <%= pkg.url %> \nDate Compiled: <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
             },
             dist: {
-                src: ['src/provider.js', 'src/directive.js', 'src/module.js'],
+                src: ['module.before.txt', 'src/provider.js', 'src/directive.js', 'src/module.js', 'module.after.txt'],
                 dest: 'build/<%= pkg.name %>.js'
             }
         },
