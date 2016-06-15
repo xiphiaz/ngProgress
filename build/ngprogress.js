@@ -231,5 +231,6 @@ angular.module('ngProgress.directive', [])
         return directiveObj;
     }]);
 
-angular.module('ngProgress', ['ngProgress.directive', 'ngProgress.provider']);
+    var ngProgress = angular.module('ngProgress', ['ngProgress.directive', 'ngProgress.provider']);
+    return ngProgress;
 }));
